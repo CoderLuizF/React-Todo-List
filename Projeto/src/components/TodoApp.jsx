@@ -7,6 +7,14 @@ const TodoApp = () => {
 
   const [inputValue, setInputValue] = useState("");
 
+  useEffect(() => {
+    const savedTasks = localStorage.getItem("meus-todos");
+
+    if (savedTasks) {
+      setTodos(JSON.parse(savedTasks));
+    }
+  }, []);
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
