@@ -15,6 +15,10 @@ const TodoApp = () => {
     }
   }, []);
 
+  useEffect(() => {
+    localStorage.setItem("meus-todos", JSON.stringify(todos));
+  }, [todos]);
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
