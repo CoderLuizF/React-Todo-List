@@ -41,7 +41,7 @@ const TodoApp = () => {
     <div className="app-container">
       <h1 className="title">Lista de tarefas</h1>
 
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className="form-container">
         <input
           type="text"
           className="input-field"
