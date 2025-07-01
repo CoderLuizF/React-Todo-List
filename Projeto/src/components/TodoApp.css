@@ -6,3 +6,17 @@ body {
     color: #6200ee;
     text-align: center;
 }
+
+.empty {
+    text-align: center;
+}
+
+.app-container {
+    max-width: 400px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #e5e5e5;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
